@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uottawa.tipcalculatornew" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Summary"
+            android:label="@string/title_activity_summary"
+            android:parentActivityName=".MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uottawa.tipcalculatornew.MainActivity" />
+            >
+        </activity>
+        <activity
+            android:name=".SuggestATip"
+            android:label="@string/title_activity_suggest_atip"
+            android:parentActivityName=".MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uottawa.tipcalculatornew.MainActivity" />
+            >
+        </activity>
+        <activity android:name="com.uottawa.tipcalculatornew.SettingsActivity"
+            android:label="@string/title_activity_tip_preferences"
+            >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.uottawa.tipcalculatornew.SuggestATip">
+    <item android:id="@+id/preferences" android:title="Tip Preferences"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
